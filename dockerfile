@@ -22,6 +22,6 @@ RUN pip install gunicorn
 
 # TODO: set entrypoint and command (see entrypoint.sh)
 
-RUN chmod +x entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+RUN chmod +x /opt/entrypoint.sh
+ENTRYPOINT ["/opt/entrypoint.sh"]
 CMD ["--start-service"]
