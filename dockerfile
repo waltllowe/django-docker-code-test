@@ -17,5 +17,11 @@ RUN apk add --no-cache \
 
 EXPOSE 8000
 WORKDIR /opt
+RUN pip install -r cloud_test_app/requirements.txt
+RUN pip install gunicorn
 
 # TODO: set entrypoint and command (see entrypoint.sh)
+
+RUN chmod +x entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+CMD ["--start-service"]
