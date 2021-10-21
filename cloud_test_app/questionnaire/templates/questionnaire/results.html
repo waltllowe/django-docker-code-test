@@ -1,0 +1,27 @@
+{% extends "questionnaire/base.html" %}
+
+{% block body_content %}
+<div class="container main-body">
+
+    <div class="index-main">
+        <h1 class="index-heading">Simple Questionnaire</h1>
+        <p>
+            These are the results for the innane questionnaire.
+        </p>
+        <p>
+            <a href="/" class="btn btn-primary">back to index</a>
+        </p>
+        <p>
+            <h2>Results</h2>
+            <h4>Months</h4>
+            <ul>
+                {% for month in months %}
+                <li>
+                    {{ month.month }}: {{ month.num_picked }} ({{ month.percent }}%)
+                </li>
+                {% endfor %}
+            </ul>
+        </p>
+    </div>
+</div>
+{% endblock %}

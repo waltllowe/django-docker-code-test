@@ -57,7 +57,6 @@ def get_migration_data():
         migrations = migration_output.getvalue().splitlines()
 
         num_migrations = len(migrations)
-        logger.info(migrations)
 
         # TODO: Go through the migration lines.
         # If the migration is a needed migration, add it to: needed_migrations

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\cloud_test_app",
+    "\\cloud_test_app\\cloud_test",
+    "\\cloud_test_app\\cloud_test\\settings",
+    "\\cloud_test_app\\cloud_test\\settings\\__pycache__",
+    "\\cloud_test_app\\questionnaire",
+    "\\cloud_test_app\\questionnaire\\static",
+    "\\cloud_test_app\\questionnaire\\static\\questionnaire",
+    "\\cloud_test_app\\questionnaire\\templates",
+    "\\cloud_test_app\\questionnaire\\templates\\questionnaire",
+    "\\imgs"
+  ],
+  "PreviewInSolutionExplorer": false
+}
