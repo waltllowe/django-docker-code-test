@@ -66,10 +66,15 @@ This view will need to query for the saved FilledQuestionnaire entries, then do 
 
 #### Explain how the config for this app works, and why when using docker compose might this be a good way to configure rather than a config file
 
+
+
 #### Explain why the startup_check.py file exists and what it does
+
+The startup.py file exists to check and manage django migrations. In general, it checks if Django is ready to be started up and set going.
 
 #### Explain what the entrypoint.sh file does
 
+The entrypoint.sh file evaluates the arguments made in cmd statements to entrypoint and then runs the startup.py file and afterwards starts the gunicorn web server
 
 ## Testing and evaluation
 
