@@ -21,6 +21,22 @@
                 </li>
                 {% endfor %}
             </ul>
+            <h4>Days</h4>
+            <ul>
+                {% for day in days %}
+                <li>
+                    {{ day.day }}: {{ day.num_picked }} ({{ day.percent }}%)
+                </li>
+                {% endfor %}
+            </ul>
+            <h4>Fav day related to month</h4>
+            <ul>
+                {% for month in daysformonths %}
+                <li>
+                    {{ month.month }}: {{ month.day }}
+                </li>
+                {% endfor %}
+            </ul>
         </p>
     </div>
 </div>
